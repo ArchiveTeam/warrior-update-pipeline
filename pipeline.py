@@ -36,7 +36,7 @@ class WarningTask(Task):
         )
 
     def _finish(self, item):
-        item.may_be_canceled = True
+        item.may_be_canceled = False
         self.complete_item(item)
 
 
@@ -55,7 +55,7 @@ class IdleTask(Task):
         )
 
     def _finish(self, item):
-        item.may_be_canceled = True
+        item.may_be_canceled = False
         self.complete_item(item)
 
 
